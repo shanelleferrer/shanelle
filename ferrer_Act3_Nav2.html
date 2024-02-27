@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  padding: 18px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 8px 20px;
+  text-decoration: none;
+  background-color: #e7e7e7;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.products {
+  float: left;
+  overflow: hidden;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+.products .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 8px 20px;
+  background-color: #e7e7e7;
+  font-family: inherit;
+  margin: 0;
+  
+}
+
+.navbar a:hover, .products:hover .dropbtn {
+  background-color: tomato;
+  color: white;
+}
+
+.products-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.products-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.products-content a:hover {
+  background-color: #333;
+  color: white;
+}
+
+.products:hover .products-content {
+  display: block;
+
+}
+
+</style>
+</head>
+<body style="background-color:white;">
+
+<div class="navbar">
+  <a href="#home">Home</a>
+  <div class="products">
+    <button class="dropbtn">Products 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    
+    <div class="products-content">
+      <a href="#product1">Product 1</a>
+      <a href="#product2">Product 2</a>
+    </div>
+  </div>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</div>
+</body>
+</html>
